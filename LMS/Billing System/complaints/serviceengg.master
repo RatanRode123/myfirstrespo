@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="serviceengg.master.cs" Inherits="serviceengg" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    </div>
+    <table class="style1">
+        <tr>
+            <td>
+                <asp:Image ID="Image1" runat="server" Height="143px" 
+                    ImageUrl="~/images/PCR 3.gif" Width="928px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Menu ID="Menu1" runat="server" Height="26px" Orientation="Horizontal" 
+                    Width="926px" BackColor="#E3EAEB" DynamicHorizontalOffset="2" 
+                    Font-Names="Verdana" Font-Size="0.8em" ForeColor="#666666" 
+                    StaticSubMenuIndent="10px">
+                    <StaticSelectedStyle BackColor="#1C5E55" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                    <DynamicMenuStyle BackColor="#E3EAEB" />
+                    <DynamicSelectedStyle BackColor="#1C5E55" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/serviceenggprofile.aspx" Text="Profile" 
+                            Value="Profile"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/servenggcomplaints.aspx" Text="Complaint" 
+                            Value="Complaint"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/home.aspx" Text="logout" Value="logout">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

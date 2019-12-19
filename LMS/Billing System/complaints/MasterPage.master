@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style6
+        {
+            width: 100%;
+        }
+        .style7
+        {
+            width: 926px;
+        }
+        .style8
+        {
+            width: 926px;
+            height: 207px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+    
+    
+    <table class="style6">
+        <tr>
+            <td class="style7">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style8">
+                <asp:Image ID="Image1" runat="server" Height="201px" 
+                    ImageUrl="~/images/PCR 3.gif" Width="1005px" 
+                    style="margin-top: 4px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style7">
+                <asp:Menu ID="Menu1" runat="server" Height="17px" Orientation="Horizontal" 
+                    Width="1004px" onmenuitemclick="Menu1_MenuItemClick" BackColor="#FFFBD6" 
+                    DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+                    ForeColor="#990000" StaticSubMenuIndent="10px">
+                    <StaticSelectedStyle BackColor="#FFCC66" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/login.aspx" Text="Login" Value="Login">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td class="style7">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table></form>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        </div>
+    <table class="style1">
+        <tr>
+            <td>
+                <asp:Image ID="Image1" runat="server" Height="215px" 
+                    ImageUrl="~/images/PCR 3.gif" Width="981px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Image ID="Image2" runat="server" Height="153px" 
+                    ImageUrl="~/images/cooltext533865837.png" Width="146px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Menu ID="Menu1" runat="server" Height="16px" Orientation="Horizontal" 
+                    Width="927px" onmenuitemclick="Menu1_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/adminprofile.aspx" Text="Profile" Value="Profile">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/adminuserdetails.aspx" Text="Userdetails" 
+                            Value="Userdetails"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/addservengg.aspx" Text="Add Servicemen" 
+                            Value="Add Servicemen"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/adminview status.aspx" Text="View status" 
+                            Value="View status"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/adminview complaints.aspx" Text="view complaints" 
+                            Value="view complaints"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/adminview feedback.aspx" Text="view feedback" 
+                            Value="view feedback"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/home.aspx" Text="logout" Value="logout">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

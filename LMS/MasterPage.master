@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>iWash-Laundry System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Pursuit Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- navigation -->
+    <link href="css/nav.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div id="home">
+        <!-- header -->
+        <header>
+            <div class="container">
+                <div class="header d-lg-flex justify-content-between align-items-center">
+                    <div class="header-wthree">
+                        <h1>
+                            <a class="navbar-brand editContent logo" href="index.html">
+                                <span class="fa fa-ioxhost" aria-hidden="true"></span>iWash-Laundry  System 
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="nav_w3ls">
+                        <nav>
+                            <input class="menu-btn" type="checkbox" id="menu-btn" />
+                            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                            <ul class="menu">
+                                <li class="nav-item active"><a class="nav-link" href="Home.aspx">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Services.aspx">Services</a></li>
+                                <li class="dropdown nav-item">
+                                    <a href="#" class="dropbtn nav-link">Login</a>
+                                    <div class="dropdown-content  show">
+                                        <a href="Userlogin.aspx" class="nav-link">Customer </a>
+                                        <a class="nav-link" href="Adminlogin.aspx">Admin</a>
+                                     </div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="Contactus.aspx">Contact Us</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+        <!-- banner -->
+    
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+             </asp:ContentPlaceHolder>
+    </div>
+
+   
+    
+    <!--  about -->
+    
+    <section class="wthree-slide-btm pt-lg-5" id="about">
+          <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+             </asp:ContentPlaceHolder>
+     </section>
+    <!-- //about -->
+
+
+
+    
+
+    <!-- footer -->
+    <footer   class="cpy-right bg-theme text-center">
+        <div class="container">
+        
+            <a href="#home" class="move-top text-center"><span class="fa fa-angle-double-up" aria-hidden="true"></span></a>
+            <div class="footer-logo">
+                <h2>
+                    <a class="navbar-brand" href="index.html">
+                        <span class="fa fa-ioxhost  color-theme mr-2" aria-hidden="true"></span>iWash-Luandry System
+                    </a>
+                </h2>
+            </div>
+            <div class="wthree-social">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-facebook-f icon_facebook"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-twitter icon_twitter"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-dribbble icon_dribbble"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-google-plus icon_g_plus"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center py-3">
+        <p class="cpy-wthree">© 2019 iWash-Laundry  System. All rights reserved | Design by
+            <a  class="color-theme">Madhuri Walke,Ratan Rode</a>
+        </p>
+    </div>
+    <!-- //footer -->
+    
+    </form>
+</body>
+
+
+</html>
